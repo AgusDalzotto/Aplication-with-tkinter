@@ -1,14 +1,11 @@
-import tkinter
-from elements import saludar
+from tkinter import *
 
-window = tkinter.Tk()
+# base configuration
+window = Tk()
 window.geometry("800x600")
-# etiquet = tkinter.Label(window, text="aplication", bg="red")
-# etiquet.pack(fill=tkinter.BOTH, expand=True)
-# button1 = tkinter.Button(window, text="aceptar",padx=30, pady=30, command=saludar)
-# button1.pack()
-
-textbox = tkinter.Entry(window, font="arial 30")
-textbox.pack()
-
+window.title("Weather application")
 window.mainloop()
+
+text = Entry(window, font=("Arial", 30, "normal"), justify="center")
+text.pack(padx=40, pady=40)
+# base configuration

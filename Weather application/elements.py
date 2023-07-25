@@ -11,6 +11,8 @@ def obtain_weather(city):
 
 
 def show_response(weather):
-    name_of_city = weather["name"]
-    description_of_city = weather["weather"][0]["description"]
-    temperature_of_the_city = weather["main"]["temp"]
+    name = weather["name"]
+    description = weather["weather"][0]["description"]
+    temperature = weather["main"]["temp"]
+
+    name_of_city["text"] = name

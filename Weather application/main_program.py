@@ -8,13 +8,13 @@ window.title("Weather application")
 # base configuration
 
 # entry
-city_entry = Entry(window, font=("Arial", 40, "normal"), justify="center")
+city_entry = Entry(window, font=("Courier", 40, "normal"), justify="center")
 city_entry.pack(padx=40, pady=40)
 # entry
 
 # button
 obtain_information = Button(window, text="Obtain the weather", font=(
-    "Arial", 30, "normal"), command=lambda: obtain_weather(city_entry.get()))
+    "Courier", 30, "normal"), command=lambda: obtain_weather(city_entry.get()))
 obtain_information.pack()
 # button
 

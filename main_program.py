@@ -16,8 +16,11 @@ obtain_information = Button(window, text="Obtener el clima")
 obtain_information.pack()
 # button
 
+# return information
 show_weather = Label(text="weather", font=("Courier", 40, "normal"))
 show_weather.pack()
+# return information
 
+window.configure(bg='light blue')
 
 window.mainloop()

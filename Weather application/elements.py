@@ -7,8 +7,10 @@ def obtain_weather(city):
     URL = "https://api.openweathermap.org/data/2.5/weather"
     parameters = {"APPID": Api_key, "q": city, "units": "metric"}
     response = requests.get(URL, params=parameters)
-
     weather = response.json()
-    print(weather["name"])
-    print(weather["weather"][0]["description"])
-    print(weather["main"]["temp"])
+
+
+def show_response(weather):
+    name_of_city = weather["name"]
+    description_of_city = weather["weather"][0]["description"]
+    temperature_of_the_city = weather["main"]["temp"]

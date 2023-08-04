@@ -1,5 +1,6 @@
 from tkinter import *
 import requests
+from main_program import show_description, show_city, show_temperature
 
 
 def obtain_weather(city):
@@ -11,8 +12,10 @@ def obtain_weather(city):
 
 
 def show_response(weather):
-    name = weather["name"]
+    name_of_city = weather["name"]
     description = weather["weather"][0]["description"]
     temperature = weather["main"]["temp"]
 
-    name_of_city["text"] = name
+    show_city["text"] = name_of_city
+    show_description["text"] = description
+    show_temperature["text"] = temperature

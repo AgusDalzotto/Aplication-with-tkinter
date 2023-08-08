@@ -1,5 +1,5 @@
 from tkinter import *
-from elements import obtain_weather
+from elements import *
 
 # base configuration
 window = Tk()
@@ -23,6 +23,7 @@ show_weather = Label(text="weather", font=("Courier", 40, "normal"))
 show_weather.pack()
 # return information
 
+# tags
 show_city = Label(text="city", font=("Courier", 40, "normal"))
 show_city.pack()
 
@@ -31,7 +32,10 @@ show_temperature.pack()
 
 show_description = Label(text="weather", font=("Courier", 40, "normal"))
 show_description.pack()
+# tags
 
+# background color
 window.configure(bg='light blue')
+# background color
 
 window.mainloop()

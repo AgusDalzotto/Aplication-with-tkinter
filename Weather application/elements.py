@@ -1,6 +1,6 @@
 from tkinter import *
 import requests
-from main_program import show_description, show_city, show_temperature
+from main_program import *
 
 
 def obtain_weather(city):
@@ -9,6 +9,8 @@ def obtain_weather(city):
     parameters = {"APPID": Api_key, "q": city, "units": "metric"}
     response = requests.get(URL, params=parameters)
     weather = response.json()
+
+    show_response(weather)
 
 
 def show_response(weather):

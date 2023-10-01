@@ -14,7 +14,7 @@ city_entry.pack(padx=40, pady=40)
 
 # button
 obtain_information = Button(window, text="Obtain the weather", font=(
-    "Courier", 30, "normal"), command=lambda: obtain_weather(city_entry.get()))
+    "Courier", 30, "normal"), command=lambda: obtainWeather(city_entry.get()))
 obtain_information.pack()
 # button
 

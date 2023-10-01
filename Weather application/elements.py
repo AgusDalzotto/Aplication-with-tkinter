@@ -10,7 +10,7 @@ def obtain_weather(city):
     response = requests.get(URL, params=parameters)
     weather = response.json()
 
-    show_response(weather)
+    return show_response(weather)
 
 
 def show_response(weather):

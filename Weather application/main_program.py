@@ -3,7 +3,7 @@ from elements import *
 
 # base configuration
 window = Tk()
-window.geometry("800x600")
+window.geometry("1280x720")
 window.title("Weather application")
 # base configuration
 
